@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* background-color: aliceblue; */
 }
 
 header {
@@ -8,10 +9,43 @@ header {
     padding: 15px 0;
     margin: 0 auto;
     text-align: center;
+    background-color: antiquewhite;
+    box-sizing: border-box;
 }
 
-header .headline {
+.header {
+    display: flex;
+    height: 65px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header ul li {
+    margin-left: 15px;
+    list-style: none;
+    padding-right: 15px;
+}
+
+.header-logo {
+    padding-left: 15px;
+}
+
+.headline {
     font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.headline img {
+    /* 縦横の幅を同じにする */
+    width: 180px;
+    height: 180px;
+    /* 角丸半径を50%(円形)にする */
+    border-radius: 50%;
 }
 
 .navi-list {
@@ -45,4 +79,36 @@ footer {
 
 footer .footer-menu li {
     display: inline;
+}
+
+.main_section {
+    margin: 20px;
+}
+
+.main_section h1 {
+    background: linear-gradient(transparent 60%, #ffff00 0%);
+    margin-bottom: 20px;
+}
+
+.main_section p {
+    margin-bottom: 30px;
+}
+
+.links_grid {
+    overflow: hidden;
+}
+
+.links_grid .links_column {
+    /* display: inline; */
+    text-align: center;
+}
+
+.links_grid .links_column li {
+    text-align: center;
+    display: inline-block;
+    background-color: darkgray;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
 }
